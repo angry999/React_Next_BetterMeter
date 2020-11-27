@@ -1,0 +1,20 @@
+@import '../../styles/include.scss';
+
+.newCard {
+  background: #FCFAFA url('/images/icon-plus.svg') no-repeat center;
+  border-radius: 20px;
+  cursor: pointer;
+  height: 560px;
+  width: 305px;
+
+  &:hover {
+    background-color: #fff;
+    transition: background-color 0.2s;
+  }
+}
+
+@include media-mobile {
+  .newCard {
+    display: none;
+  }
+}

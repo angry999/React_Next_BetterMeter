@@ -1,0 +1,33 @@
+@import '../../styles/include.scss';
+
+.item {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+
+  & + & {
+    border-top: 1px solid #E5E5E5;
+  }
+}
+
+.label {
+  align-items: center;
+  display: flex;
+}
+
+.name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 46px;
+  margin-left: 20px;
+  white-space: nowrap;
+}
+
+.value {
+  @include font-dm-mono;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 46px;
+  text-align: right;
+}

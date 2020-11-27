@@ -1,0 +1,60 @@
+@import '../../styles/include.scss';
+
+.item {
+  align-items: center;
+  border-bottom: 1px solid #E5E5E5;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+.label {
+  align-items: center;
+  display: flex;
+}
+
+.type {
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  border: 3px solid #fff;
+  border-radius: 23px;
+  height: 46px;
+  margin-left: -9px;
+  width: 46px;
+
+  &.up {
+    background-color: #BEEDC0;
+    background-image: url('/images/icon-trend-type-up.svg');
+  }
+
+  &.good {
+    background-color: #FAF8F3;
+    background-image: url('/images/icon-trend-type-good.svg');
+  }
+
+  &.bad {
+    background-color: #FAF8F3;
+    background-image: url('/images/icon-trend-type-bad.svg');
+  }
+
+  &.hot {
+    background-color: #FAF8F3;
+    background-image: url('/images/icon-trend-type-hot.svg');
+  }
+}
+
+.value {
+  @include font-dm-mono;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 46px;
+  text-align: right;
+}
+
+.avatar {
+  box-sizing: border-box;
+  border: 4px solid #fff;
+  position: relative;
+  z-index: 1;
+}

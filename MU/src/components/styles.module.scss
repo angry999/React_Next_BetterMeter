@@ -1,0 +1,46 @@
+@import '../../styles/include.scss';
+
+.chartLegend {
+  align-items: center;
+  display: flex;
+  margin-bottom: 7px;
+  padding-left: 20px;
+}
+
+.label {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  color: #1A2437;
+
+  .selected > & {
+    color: #fff;
+  }
+}
+
+.item {
+  align-items: center;
+  display: flex;
+  border-radius: 16px;
+  padding: 8px 10px;
+
+  & + & {
+    margin-left: 28px;
+  }
+}
+
+.circle {
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 8px;
+  box-sizing: border-box;
+  height: 16px;
+  margin-right: 7px;
+  width: 16px;
+}
+
+@include media-mobile {
+  .chartLegend {
+    display: none;
+  }
+}

@@ -1,0 +1,71 @@
+@import '../../styles/include.scss';
+
+.name {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100%;
+  color: #84868A;
+  padding-left: 44px;
+
+  > span {
+    margin-right: 5px;
+  }
+
+  > span + * {
+    position: relative;
+    top: -1px;
+  }
+}
+
+.data {
+  align-items: center;
+  display: flex;
+  margin-top: 10px;
+}
+
+.icon {
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 24px;
+  margin-right: 20px;
+  width: 24px;
+
+  &.trendUp {
+    background-image: url('/images/icon-trend-up.svg');
+  }
+
+  &.clock {
+    background-image: url('/images/icon-clock.svg');
+  }
+
+  &.branches {
+    background-image: url('/images/icon-branches.svg');
+  }
+}
+
+.value {
+  @include font-dm-mono;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 100%;
+}
+
+.delta {
+  border-radius: 12px;
+  height: 24px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  margin-left: 10px;
+  padding: 0 7px;
+
+  &.positive {
+    color: #01653B;
+    background-color: #BEEDC0;
+  }
+
+  &.negative {
+    background-color: #FED1D1;;
+    color: #EC0C0C;
+  }
+}

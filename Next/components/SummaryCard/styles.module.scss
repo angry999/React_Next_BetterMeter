@@ -1,0 +1,41 @@
+@import '../../styles/include.scss';
+
+.summaryCard {
+  background: #FFFFFF;
+  border-radius: 20px;
+  box-sizing: border-box;
+  height: 560px;
+  padding: 30px;
+  position: relative;
+  min-width: 350px;
+  width: 445px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 100%;
+}
+
+.threeDotsMenu {
+  position: absolute;
+  right: 16px;
+  top: 27px;
+}
+
+.filter {
+  margin: 37px 0 22px;
+}
+
+.filterSelectHandle {
+  font-size: 18px;
+}
+
+@include media-mobile {
+  .summaryCard {
+    background-color: #F6F6F6;
+    border-radius: 0;
+    min-width: 0;
+    width: 100%;
+  }
+}

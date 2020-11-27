@@ -1,0 +1,22 @@
+/**
+ * Global CSS Style
+ *
+ * Must be included only once.
+ *
+ * Includes Reset CSS and some global basic styles.
+ */
+ @import 'fonts';
+ @import 'reset';
+ @import 'include';
+
+body {
+  @include font-dm-sans;
+  background-color: #F7F5F5;
+  color: #000;
+}
+
+@include media-mobile {
+  body {
+    background-color: #FFF;
+  }
+}

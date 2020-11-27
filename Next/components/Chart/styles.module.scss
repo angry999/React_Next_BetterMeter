@@ -1,0 +1,54 @@
+@import '../../styles/include.scss';
+
+.chart {
+  height: 100%;
+  position: relative;
+  width: 100%;
+
+  :global(.recharts-cartesian-axis-tick-value) {
+    @include font-dm-mono;
+    color: #AFAFAF;
+    font-size: 16px;
+  }
+}
+
+.tooltip {
+  background-color: #0C172E;
+  border-radius: 6px;
+  box-shadow: 0px 10px 30px #00000010;
+  padding: 11px 16px 10px;
+  position: absolute;
+  transform: translate(-50%, -100%);
+  z-index: 10000;
+}
+
+.tooltipLabel {
+  @include font-ibm-plex-sans;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.tooltipValue {
+  background: url('/images/icon-person.svg') no-repeat 0 center;
+  margin-top: 4px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 100%;
+  color: #F9F8F6;
+  padding-left: 20px;
+}
+
+.tooltipArrow {
+  border-style: solid;
+  border-width: 7px 7px 0 7px;
+  border-color: #0C172E transparent transparent transparent;
+  height: 0;
+  bottom: -6px;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 0;
+}

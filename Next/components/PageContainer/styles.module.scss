@@ -1,0 +1,11 @@
+@import '../../styles/include.scss';
+
+.pageContainer {
+  padding: 0 80px;
+}
+
+@include media-mobile {
+  .pageContainer {
+    padding: 0;
+  }
+}

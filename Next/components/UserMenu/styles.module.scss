@@ -1,0 +1,38 @@
+@import '../../styles/include.scss';
+
+.userMenu {
+  align-items: center;
+  display: flex;
+}
+
+.avatar {
+  height: 36px;
+  width: 36px;
+}
+
+.fullName {
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 22px;
+  margin-left: 9px;
+}
+
+.arrow {
+  background: url('/images/icon-arrow-down-14x8.svg') no-repeat center;
+  height: 8px;
+  margin-left: 10px;
+  width: 14px;
+}
+
+@include media-mobile {
+  .avatar {
+    height: 33px;
+    width: 33px;
+  }
+
+  .fullName,
+  .arrow {
+    display: none;
+  }
+}

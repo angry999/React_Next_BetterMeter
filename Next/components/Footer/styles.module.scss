@@ -1,0 +1,17 @@
+@import '../../styles/include.scss';
+
+.footer {
+  @include font-ibm-plex-sans;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  text-align: right;
+  color: #5D6677;
+  padding: 140px 0 31px;
+}
+
+@include media-mobile {
+  .footer {
+    padding-right: 30px;
+  }
+}

@@ -1,0 +1,125 @@
+@import '../styles/include.scss';
+
+.summaryCards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -20px;
+  margin-right: -20px;
+
+  > div {
+    flex: 0 1 auto;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+.data {
+  background-color: #fff;
+  border-radius: 0 20px 20px 20px;
+  display: flex;
+  width: 100%;
+}
+
+.dataList {
+  border-right: 1px solid #E5E5E5;
+  justify-content: space-between;
+  flex-direction: column;
+  display: flex;
+  min-width: 250px;
+  padding: 25px 55px 0 50px;
+  width: 28%;
+}
+
+.dataChart {
+  box-sizing: border-box;
+  height: 602px;
+  flex: 1 1 auto;
+  padding: 32px 35px 70px 35px;
+  width: 72%;
+}
+
+.dataSeeAll {
+  display: flex;
+  justify-content: flex-end;
+  padding: 76px 0 27px;
+
+  > span {
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    color: #84868A;
+
+    &:after {
+      background: url('/images/icon-arrow-right.svg') no-repeat center;
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      height: 10px;
+      margin-left: 8px;
+      width: 6px;
+    }
+  }
+}
+
+.filters {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.filterSelect + .filterSelect {
+  margin-left: 75px;
+}
+
+.siteOptionColor {
+  background-color: #5D6677;
+  border-radius: 50%;
+  height: 9px;
+  margin-right: 15px;
+  position: relative;
+  top: -1px;
+  width: 9px;
+}
+
+.siteOption {
+  display: flex;
+  align-items: center;
+}
+
+@include media-mobile {
+  .filters {
+    display: none;
+  }
+
+  .data {
+    border-radius: 0;
+  }
+
+  .dataList {
+    display: none;
+  }
+
+  .dataChart {
+    height: 246px;
+    padding: 10px 0 0 0;
+    width: 100%;
+  }
+
+  .summaryCards {
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 0;
+    margin-right: 0;
+
+    > div {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    > div + div {
+      margin-top: 20px;
+    }
+  }
+}

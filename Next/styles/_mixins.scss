@@ -1,0 +1,15 @@
+@mixin font-dm-sans {
+  font-family: 'DM Sans', Arial, Helvetica, sans-serif;
+}
+
+@mixin font-dm-mono {
+  font-family: 'DM Mono', Arial, Helvetica, sans-serif;
+}
+
+@mixin font-ibm-plex-sans {
+  font-family: 'IBM Plex Sans', Arial, Helvetica, sans-serif;
+}
+
+@mixin media-mobile {
+  @media (max-width: 1023px) { @content; }
+}

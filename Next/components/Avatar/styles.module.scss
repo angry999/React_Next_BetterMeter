@@ -1,0 +1,19 @@
+@import '../../styles/include.scss';
+
+.avatar {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 100%;
+  height: 46px;
+  overflow: hidden;
+  width: 46px;
+
+  &.dark {
+    color: #000;
+  }
+}

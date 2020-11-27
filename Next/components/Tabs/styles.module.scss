@@ -1,0 +1,69 @@
+@import '../../styles/include.scss';
+
+.tabsWrapper {
+  display: flex;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #FCFAFA;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.tab {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  height: 120px;
+  width: 357px;
+
+  &.selected {
+    background-color: #FFFFFF;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    cursor: default;
+  }
+
+  &:first-child {
+    border-top-left-radius: 20px;
+  }
+
+  &:last-child {
+    border-top-right-radius: 20px;
+  }
+}
+
+@include media-mobile {
+  .tabs {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .tab {
+    background-color: #F6F6F6;
+    border-radius: 0;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    padding: 0 28px;
+    width: 100%;
+
+    &:first-child,
+    &:last-child {
+      border-radius: 0;
+    }
+
+    &.selected {
+      background-color: #F6F6F6;
+      border-radius: 0;
+      box-shadow: 0 10px 10px 0 #00000020;
+      position: relative;
+    }
+  }
+
+  .tab + .tab {
+    border-top: 1px solid #fff;
+  }
+}

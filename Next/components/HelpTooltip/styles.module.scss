@@ -1,0 +1,46 @@
+@import '../../styles/include.scss';
+
+.handle {
+  background: url('/images/icon-help.svg') no-repeat center;
+  display: inline-block;
+  height: 14px;
+  vertical-align: middle;
+  outline: none;
+  width: 14px;
+}
+
+.popover {
+  background-color: #0C172E;
+  border-radius: 7px;
+  box-shadow: 0px 10px 30px #00000010;
+  width: 175px;
+  z-index: 1000;
+}
+
+.popoverArrow {
+  border-style: solid;
+  border-width: 7px 7px 0 7px;
+  border-color: #0C172E transparent transparent transparent;
+  height: 0;
+  bottom: -6px;
+  width: 0;
+}
+
+.content {
+  padding: 15px 15px 18px 15px;
+}
+
+.contentTitle {
+  background: url('/images/icon-help-small.svg') no-repeat left center;
+  font-size: 12px;
+  line-height: 14px;
+  color: #FFFFFF;
+  padding-left: 18px;
+}
+
+.contentDescription {
+  font-size: 12px;
+  line-height: 13px;
+  color: #84868A;
+  margin-top: 6px;
+}

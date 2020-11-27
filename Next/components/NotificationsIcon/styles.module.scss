@@ -1,0 +1,27 @@
+@import '../../styles/include.scss';
+
+.notificationsIcon {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  background: url('/images/icon-bell.svg') no-repeat center;
+  height: 20px;
+  width: 19px;
+}
+
+.count {
+  background: #FF5C00;
+  border: 3px solid #101010;
+  border-radius: 50%;
+  color: #F6F6F6;
+  height: 17px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 17px;
+  margin-left: -5px;
+  text-align: center;
+  width: 17px;
+}

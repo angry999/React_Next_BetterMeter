@@ -1,0 +1,47 @@
+@import '../../styles/include.scss';
+
+.handle {
+  background: url('/images/icon-three-dots.svg') no-repeat center;
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  height: 32px;
+  justify-content: center;
+  outline: none;
+  width: 32px;
+}
+
+.handleClose {
+  background: url('/images/icon-arrow-up.svg') no-repeat center;
+  content: '';
+  display: block;
+  height: 6px;
+  position: absolute;
+  top: 20px;
+  right: 16px;
+  outline: none;
+  width: 10px;
+}
+
+.popover {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0px 10px 20px -10px #cecece;
+  border-radius: 10px;
+  min-width: 160px;
+  z-index: 1000;
+}
+
+.list {
+  padding: 8px 20px;
+}
+
+.option {
+  color: #1a2437;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 100%;
+  outline: none;
+  padding: 8px 0;
+}
